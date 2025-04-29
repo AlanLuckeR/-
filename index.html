@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Галерея військової авіації України та США. Дізнайтеся цікаві факти про літаки Міг-29, Су-27, F-16, A-10 та інші!">
+  <meta property="og:title" content="Військова Авіація України та США">
+  <meta property="og:description" content="Інтерактивна галерея сучасних бойових літаків. Вивчайте, досліджуйте, діліться!">
+  <meta property="og:image" content="https://example.com/og-image.jpg">
+  <meta property="og:type" content="website">
+  <title>Військова Авіація України та США</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+        background-color: #cc7700;
+      padding: 3rem 1rem;
+      text-align: center;
+      color: #fff;
+      margin: 0;
+      padding: 1rem;
+
+    
+      
+    }
+    .menu {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .menu button {
+      background-color: transparent;
+      color: cyan;
+      border: 2px solid cyan;
+      padding: 0.5rem 1rem;
+      margin: 0 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .menu button:hover {
+      background-color: rgba(0, 255, 255, 0.2);
+    }
+    .main-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .category-box {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 2rem;
+      flex: 1 1 40%;
+      max-width: 600px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    
+    .plane-card {
+      background-color: #111;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      padding: 1rem;
+    }
+    .plane-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+    .plane-card h3 {
+      margin: 10px 0 5px;
+    }
+    .plane-card p {
+      margin: 0 0 10px;
+      font-size: 0.9rem;
+    }
+    .contact-form {
+      background: #222;
+      padding: 2rem;
+      max-width: 500px;
+      margin: 2rem auto;
+      border-radius: 10px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      background: #aa5500;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #cc7700;
+      padding: 3rem 1rem;
+      text-align: center;
+      color: #fff;
+    }
+    .footer-header-box {
+      background-color: rgba(0, 0, 0, 0.85);
+      border-radius: 15px;
+      padding: 1rem 2rem;
+      display: inline-block;
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Військова Авіація України та США</h1>
+    <p>Досліджуйте найпотужніші бойові літаки</p>
+  </header>
+
+  <div class="menu">
+    <button onclick="location.href='#ukrainian'">Українська Авіація</button>
+    <button onclick="location.href='#american'">Американська Авіація</button>
+  </div>
+
+  <main class="main-container">
+    <div class="category-box" id="ukrainian">
+      <h2>Українська Авіація</h2>
+      <div class="gallery">
+        <div class="plane-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ5HWSQ2nRDdTS7pe6igVqQalJNYw-aMyzSpjmFDUNsdIYOWtstqZlW_WGEVcVqBiiZYBYCiwPD3Ibgbxr5NwgfRqiusqYzNDmFbvaeQ" alt="Міг-29" loading="lazy">
+          <h3>Міг-29</h3>
+          <p>Швидкий винищувач із відмінною маневреністю.</p>
+        </div>
+        <div class="plane-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Ukrainian_Air_Force_Sukhoi_Su-27P_Flanker_%2829583343448%29.jpg" alt="Су-27" loading="lazy">
+          <h3>Су-27</h3>
+          <p>Потужний багатоцільовий винищувач радянського виробництва.</p>
+        </div>
+        <div class="plane-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Sukhoi_Su-25_in_Ukrainian_service_269_n_%28cropped%29.jpg" alt="Су-25" loading="lazy">
+          <h3>Су-25</h3>
+          <p>Штурмовик, призначений для підтримки військ з повітря.</p>
+        </div>
+        <div class="plane-card">
+          <img src="https://defence-ua.com/media/illustration/articles/b21621be1b260044.jpg" alt="Су-24" loading="lazy">
+          <h3>Су-24</h3>
+          <p>Фронтовий бомбардувальник зі змінною геометрією крила.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="category-box" id="american">
+      <h2>Американська Авіація</h2>
+      <div class="gallery">
+        <div class="plane-card">
+          <img src="https://postfactum.info/img/publications/1201x686/QnPw793Z-b-vAkvJWaGBxyLvAKcbH0Xx.jpg" alt="F-18" loading="lazy">
+          <h3>F-18</h3>
+          <p>Багатоцільовий винищувач флоту США.</p>
+        </div>
+        <div class="plane-card">
+          <img src="https://media.slovoidilo.ua/media/publications/19/184690/184690-1_large.jpg" alt="F-16" loading="lazy">
+          <h3>F-16</h3>
+          <p>Легкий винищувач із високою маневреністю.</p>
+        </div>
+        <div class="plane-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/USAF_A-10_Thunderbolt_II_after_taking_on_fuel_over_Afghanistan.jpg" alt="A-10" loading="lazy">
+          <h3>A-10</h3>
+          <p>Справжній танк у повітрі, ефективний проти бронетехніки.</p>
+        </div>
+        <div class="plane-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/F-15C_Eagle_from_the_44th_Fighter_Squadron_flies_during_a_routine_training_exercise_April_15%2C_2019.jpg/1200px-F-15C_Eagle_from_the_44th_Fighter_Squadron_flies_during_a_routine_training_exercise_April_15%2C_2019.jpg" alt="F-15" loading="lazy">
+          <h3>F-15</h3>
+          <p>Один із найуспішніших винищувачів США з часів Холодної війни.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="contact-form">
+    <h2>Реєстрація</h2>
+    <form>
+      <input type="text" name="name" placeholder="Ім'я" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Пароль" required>
+      <button type="submit">Зареєструватися</button>
+    </form>
+  </section>
+
+  <footer>
+    </div>
+    <p>&copy; 2025 Всі права захищені.</p>
+  </footer>
+</body>
+</html>
+
